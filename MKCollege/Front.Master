@@ -11,7 +11,8 @@
     <link href="Datatable/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--Fontawesome css--%>
     <link href="fontawesome/css/all.css" rel="stylesheet" />
-
+    <%--Footer css--%>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
     <%--jquery--%>
     <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <%--popper js--%>
@@ -28,8 +29,8 @@
 
 
         <div>
- 
-            <nav class="navbar navbar-expand-lg navbar-light">
+
+             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="imgs/MKLogo.png" width="30" height="30"/>
                     MKConnect
@@ -42,7 +43,7 @@
 
                 <!-- Navbar Buttons -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="homepage.aspx">Home</a>
                         </li>
@@ -97,9 +98,31 @@
         <!-- Main Content Placeholder -->
 
         <footer>
-            <p>&copy 2023 Milton Keynes College All Rights Reserved  <a class="footerlinks" href="#" 
-                target="_blank"> Milton Keynes College</a></p>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp.Linkbutton class="footerlinks" ID="linkButton10" 
+                        runat="server"> Admin Loign</asp.Linkbutton>
+                            &nbsp;
+                            <asp.Linkbutton class="footerlinks" ID="AspLinkbutton11" 
+                        runat="server"> Member Management</asp.Linkbutton>
+                            &nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke">&copy 2023 Milton Keynes College All Rights Reserved.  <a 
+                        class="footerlinks" href="#" target="_blank"> Milton Keynes College</a></p>
+                    </div>
+                </div>
+            </div>
+
         </footer>
+        <!-- ./Footer -->
 
     </form>
 </body>
