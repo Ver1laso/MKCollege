@@ -34,12 +34,14 @@
                     <img src="imgs/MKLogo.png" width="30" height="30"/>
                     MKConnect
                 </a>
-                <button class="nav-bar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <!-- Navbar Buttons -->
-                <div class="collapse navbar-collapse" id="navbarSupportedConntent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="homepage.aspx">Home</a>
@@ -50,7 +52,7 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Messages</a>
                         </li>
-                         <li class="nav-item active">
+                        <li class="nav-item active">
                             <a class="nav-link" href="#">Calendar</a>
                         </li>
                         <li class="nav-item active">
@@ -75,11 +77,8 @@
                         <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server">
                                 Logout</asp:LinkButton>
-
-                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server">
-                                Hello user</asp:LinkButton>
                         </li>
+
                     </ul>
                 </div>
 
