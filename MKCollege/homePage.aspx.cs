@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace MKCollege
 {
-    public partial class Home_Page : System.Web.UI.Page
+    public partial class homePage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
