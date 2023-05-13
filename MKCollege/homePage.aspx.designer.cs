@@ -11,7 +11,7 @@ namespace MKCollege
 {
 
 
-    public partial class homePage
+    public partial class adminlogin
     {
     }
 }
