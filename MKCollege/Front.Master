@@ -25,16 +25,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
-
-
         <div>
-
-             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
-                    <img src="imgs/MKLogo.png" width="30" height="30"/>
+             <nav class="navbar navbar-expand-lg ">
+                 <a class="navbar-brand" href="#">
+                    <img style="padding-left:5px" src="imgs/MKLogoDark.png" width="50"/>
                     MKConnect
-                </a><a href="Datatable/">Datatable/</a>
+                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,11 +98,13 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
-                            <asp.Linkbutton class="footerlinks" ID="linkButton10" 
-                        runat="server"> Admin Loign</asp.Linkbutton>
+                            <asp.Linkbutton class="footerlinks" ID="linkButton10" runat="server">
+                                Admin Login
+                            </asp.Linkbutton>
                             &nbsp;
-                            <asp.Linkbutton class="footerlinks" ID="AspLinkbutton11" 
-                        runat="server"> Member Management</asp.Linkbutton>
+                            <asp.Linkbutton class="footerlinks" ID="AspLinkbutton11" runat="server">
+                                Member Management
+                            </asp.Linkbutton>
                             &nbsp;
                         </p>
                     </div>
@@ -115,15 +113,33 @@
             <div id="footer2" class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p style="color:whitesmoke">&copy 2023 Milton Keynes College All Rights Reserved.  <a 
-                        class="footerlinks" href="#" target="_blank"> Milton Keynes College</a></p>
+                        <p style="color:grey">
+                            &copy 2023 Milton Keynes College All Rights Reserved.  
+                            <a class="footerlinks" href="#" target="_blank">
+                                Terms & Conditions
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
-
         </footer>
-        <!-- ./Footer -->
-
     </form>
 </body>
 </html>
+
+
+<style>
+    .navbar {
+        background-color: #192f45;
+    }
+
+    .navbar,
+.navbar .nav-link,
+.navbar .navbar-brand {
+        color: #a8bdd2;
+    }
+
+    .navbar-nav .nav-item.active > .nav-link {
+        color: #a8bdd2;
+    }
+</style>
