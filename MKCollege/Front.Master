@@ -99,7 +99,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
                             <asp.Linkbutton class="footerlinks" ID="linkButton10" 
-                        runat="server"> Admin Loign</asp.Linkbutton>
+                        runat="server"> Admin Login</asp.Linkbutton>
                             &nbsp;
                             <asp.Linkbutton class="footerlinks" ID="AspLinkbutton11" 
                         runat="server"> Member Management</asp.Linkbutton>
