@@ -12,7 +12,7 @@
     <%--Fontawesome css--%>
     <link href="fontawesome/css/all.css" rel="stylesheet" />
     <%--Footer css--%>
-    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
     <%--jquery--%>
     <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <%--popper js--%>
@@ -26,7 +26,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-             <nav class="navbar navbar-expand-lg ">
+             <nav class="navbar navbar-expand-lg fixed-top">
                  <a class="navbar-brand" href="#">
                     <img style="padding-left:5px" src="imgs/MKLogoDark.png" width="50"/>
                     MKConnect
@@ -126,20 +126,3 @@
     </form>
 </body>
 </html>
-
-
-<style>
-    .navbar {
-        background-color: #192f45;
-    }
-
-    .navbar,
-.navbar .nav-link,
-.navbar .navbar-brand {
-        color: #a8bdd2;
-    }
-
-    .navbar-nav .nav-item.active > .nav-link {
-        color: #a8bdd2;
-    }
-</style>
