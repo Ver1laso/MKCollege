@@ -138,9 +138,82 @@
             </div>
 
             <div class="col-md-7">
-
-
-
+                <!-- Profile Right Hand Side -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <center><h4>Profile Course Viewer</h4></center>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Enrolled Courses</h5>
+                                <table style="width: 100%; table-layout: fixed;">
+                                    <col width = "35%" />
+                                    <col width = "25%" />
+                                    <col width = "20%" />
+                                    <col width = "20%" />
+                                    <tr>
+                                        <th>Course Name</th>
+                                        <th>Mentor</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Learn Spanish Quick with Jose</td>
+                                        <td>Jose P. Santana</td>
+                                        <td>16/05/2023</td>
+                                        <td>30/05/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Git good with Git</td>
+                                        <td>Dominic Clarke</td>
+                                        <td>16/05/2023</td>
+                                        <td>30/05/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>How to not suck at Spring</td>
+                                        <td>Indian Dude</td>
+                                        <td>16/05/2023</td>
+                                        <td>30/05/2023</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class ="col">
+                                <h5>Completed Courses</h5>
+                                <table style="width: 100%; table-layout: fixed;">
+                                    <col width = "35%" />
+                                    <col width = "25%" />
+                                    <col width = "20%" />
+                                    <col width = "20%" />
+                                    <tr>
+                                        <th>Course Name</th>
+                                        <th>Mentor</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Splunk Fundamentals</td>
+                                        <td>Sharon Wu</td>
+                                        <td>11/03/2023</td>
+                                        <td>13/03/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crying at Jasper</td>
+                                        <td>Sharon Wu</td>
+                                        <td>14/02/2023</td>
+                                        <td>21/02/2023</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
         </div>
