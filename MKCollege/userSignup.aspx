@@ -36,10 +36,10 @@
                     <div class="container">
                         <div class="row justify-content-between">
                             <div class="col-md-6">
-                                <label>Full Name</label>
+                                <label>First Name</label>
                                 <div class="form-group" style="margin-top: 10px">
                                     <asp:TextBox CssClass="form-control" ID="TextBox1"
-                        runat="server" placeholder="Full Name"></asp:TextBox>
+                        runat="server" placeholder="First Name"></asp:TextBox>
                                 </div>
 
                             </div>
@@ -58,10 +58,10 @@
                     <div class="container">
                         <div class="row justify-content-between">
                             <div class="col-md-6">
-                                <label>Contact Number</label>
+                                <label>Last Name</label>
                                 <div class="form-group" style="margin-top: 10px">
                                     <asp:TextBox CssClass="form-control" ID="TextBox4"
-                        runat="server" placeholder="Contact Number" TextMode="Number"></asp:TextBox>
+                        runat="server" placeholder="Last Name" TextMode="SingleLine"></asp:TextBox>
                                 </div>
 
                             </div>
@@ -88,10 +88,10 @@
                     <div class="container">
                         <div class="row justify-content-between">
                             <div class="col-md-6">
-                                <label>User ID</label>
+                                <label>User Name</label>
                                 <div class="form-group" style="margin-top: 10px">
                                     <asp:TextBox class="form-control" ID="TextBox2"
-                        runat="server" placeholder="User ID"></asp:TextBox>
+                        runat="server" placeholder="User Name"></asp:TextBox>
                                 </div>
 
                             </div>

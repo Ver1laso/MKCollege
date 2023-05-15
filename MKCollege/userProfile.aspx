@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Footer" runat="server">
 
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-5 ">
 
@@ -137,7 +137,6 @@
 
             </div>
 
-            <div class="col-md-7">
 
 
 
@@ -145,6 +144,7 @@
 
         </div>
     </div>
+
 
 
 </asp:Content>
