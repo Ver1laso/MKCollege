@@ -67,10 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminCourseIssuing.aspx" />
     <Content Include="adminlogin.aspx" />
+    <Content Include="adminUserManagement.aspx" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
+    <Content Include="courrsePage.aspx" />
     <Content Include="css\Site.css" />
     <Content Include="Datatable\css\jquery.dataTables.min.css" />
     <Content Include="Datatable\js\jquery.dataTables.min.js" />
@@ -2156,6 +2159,7 @@
     <Content Include="imgs\sign-up.png" />
     <Content Include="imgs\students-group.png" />
     <Content Include="imgs\writer.png" />
+    <Content Include="mentorLogin.aspx" />
     <Content Include="Search.aspx" />
     <Content Include="userlogin.aspx" />
     <Content Include="userProfile.aspx" />
@@ -2164,12 +2168,33 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminCourseIssuing.aspx.cs">
+      <DependentUpon>adminCourseIssuing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminCourseIssuing.aspx.designer.cs">
+      <DependentUpon>adminCourseIssuing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminlogin.aspx.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminUserManagement.aspx.cs">
+      <DependentUpon>adminUserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminUserManagement.aspx.designer.cs">
+      <DependentUpon>adminUserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="courrsePage.aspx.cs">
+      <DependentUpon>courrsePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="courrsePage.aspx.designer.cs">
+      <DependentUpon>courrsePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Front.Master.cs">
       <DependentUpon>Front.Master</DependentUpon>
@@ -2184,6 +2209,13 @@
     </Compile>
     <Compile Include="homePage.aspx.designer.cs">
       <DependentUpon>homePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mentorLogin.aspx.cs">
+      <DependentUpon>mentorLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mentorLogin.aspx.designer.cs">
+      <DependentUpon>mentorLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search.aspx.cs">

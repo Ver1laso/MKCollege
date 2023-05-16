@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Footer" runat="server">
 
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-5 ">
 
@@ -39,10 +39,10 @@
                     <div class="container">
                         <div class="row justify-content-between">
                             <div class="col-md-6">
-                                <label>Full Name</label>
+                                <label>First Name</label>
                                 <div class="form-group" style="margin-top: 10px">
                                     <asp:TextBox CssClass="form-control" ID="TextBox1"
-                        runat="server" placeholder="Full Name"></asp:TextBox>
+                        runat="server" placeholder="First Name"></asp:TextBox>
                                 </div>
 
                             </div>
@@ -56,19 +56,32 @@
 
                             </div>
                         </div>
-                    </div>
-                        <br>
-                    <div class="container">
-                        <div class="row justify-content-between">
+
+                                                <div class="row justify-content-between">
                             <div class="col-md-6">
-                                <label>Contact Number</label>
+                                <label>Last Name</label>
                                 <div class="form-group" style="margin-top: 10px">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox4"
-                        runat="server" placeholder="Contact Number" TextMode="Number"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TextBox8"
+                        runat="server" placeholder="Last Name"></asp:TextBox>
                                 </div>
 
                             </div>
 
+                            <div class="col-md-6">
+                                <label>Mentor Status</label>
+                                <div class="form-group" style="margin-top: 10px">
+                                    <asp:TextBox CssClass="form-control" ID="TextBox9"
+                        runat="server" placeholder="Mentor Status" TextMode="SingleLine"></asp:TextBox>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                        <br>
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <center>
                             <div class="col-md-6">
                                 <label>Email Address</label>
                                 <div class="form-group" style="margin-top: 10px">
@@ -77,6 +90,7 @@
                                 </div>
 
                             </div>
+                             </center>
                         </div>
                     </div>
                         <br>
@@ -127,16 +141,22 @@
 
                                 </div>
                                 </center>
+                                <div class="form-group" style="margin-top: 10px">
+                                    <asp:Button class="btn btn-danger w-100 " ID="Button2" 
+                        runat="server" Text="Delete Account" />
+
+                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <br>
-                <a href="homePage.aspx"><< Back to Home</a><br><br>
-
+                <a href="homePage.aspx">
+                    << Back to Home
+                 </a>
+                <br><br>
             </div>
-
             <div class="col-md-7">
                 <!-- Profile Right Hand Side -->
                 <div class="card">
@@ -213,11 +233,7 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
-
         </div>
     </div>
-
-
 </asp:Content>
