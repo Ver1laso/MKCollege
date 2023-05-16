@@ -33,6 +33,7 @@ namespace MKCollege
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Footer control.
         /// LinkButton4 control.
         /// </summary>
         /// <remarks>

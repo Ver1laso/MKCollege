@@ -55,7 +55,7 @@
 
                                 </div>
                                 <div class="form-group" style="margin-top: 10px">
-                                    <a href="userSignup.aspx"><input class="btn btn-info w-100 text-white" id="Button2" type="button" value="Sing Up" /></a>
+                                    <a href="userSignup.aspx"><input class="btn btn-info w-100 text-white" id="Button2" type="button" value="Sign Up" /></a>
                                 </div>
 
 
