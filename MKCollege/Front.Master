@@ -11,8 +11,8 @@
     <link href="Datatable/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--Fontawesome css--%>
     <link href="fontawesome/css/all.css" rel="stylesheet" />
-    <%--Footer css--%>
-    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <%--Site css--%>
+    <link href="css/site.css" rel="stylesheet" />
     <%--jquery--%>
     <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <%--popper js--%>
@@ -25,16 +25,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
-
-
         <div>
+             <nav class="navbar navbar-expand-lg fixed-top">
 
-             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
-                    <img src="imgs/MKLogo.png" width="30" height="30"/>
+                 <a class="navbar-brand" href="#">
+                    <img style="padding-left:5px" src="imgs/MKLogoDark.png" width="50"/>
                     MKConnect
-                </a>
+                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="homepage.aspx">Home</a>
+                            <a class="nav-link" href="homePage.aspx">Home</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Profile</a>
@@ -59,7 +56,6 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-
                     </ul>
 
                     <ul class="navbar-nav">
@@ -79,51 +75,35 @@
                             <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server">
                                 Logout</asp:LinkButton>
                         </li>
-
                     </ul>
                 </div>
-
-
-
             </nav>
-
-
         </div>
 
         <!-- Main Content Placeholder -->
-        <div>
-            <asp:ContentPlaceholder ID="Footer" runat="server">
+        <div class="mainbody">
+            <asp:ContentPlaceholder ID="Main" runat="server">
             </asp:ContentPlaceholder>
         </div>
-        <!-- Main Content Placeholder -->
 
-        <footer>
-            <div id="footer1" class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p>
-                            <asp.Linkbutton class="footerlinks" ID="linkButton10" 
-                        runat="server"> Admin Loign</asp.Linkbutton>
-                            &nbsp;
-                            <asp.Linkbutton class="footerlinks" ID="AspLinkbutton11" 
-                        runat="server"> Member Management</asp.Linkbutton>
-                            &nbsp;
-                        </p>
-                    </div>
+        <footer class="footer">
+            <div id="footer" class="container-fluid">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <asp.Linkbutton class="footerlinks" ID="linkButton10" runat="server">
+                        Admin Login
+                    </asp.Linkbutton>
+                    <asp.Linkbutton class="footerlinks" ID="AspLinkbutton11" runat="server">
+                        Member Management
+                    </asp.Linkbutton>
                 </div>
             </div>
-            <div id="footer2" class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p style="color:whitesmoke">&copy 2023 Milton Keynes College All Rights Reserved.  <a 
-                        class="footerlinks" href="#" target="_blank"> Milton Keynes College</a></p>
-                    </div>
-                </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                &copy 2023 Milton Keynes College All Rights Reserved.  
+                <a class="footerlinks" href="privacyTandCs" target="_blank">
+                    Terms & Conditions
+                </a>
             </div>
-
         </footer>
-        <!-- ./Footer -->
-
     </form>
 </body>
 </html>
