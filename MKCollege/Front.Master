@@ -27,6 +27,7 @@
     <form id="form1" runat="server">
         <div>
              <nav class="navbar navbar-expand-lg fixed-top">
+
                  <a class="navbar-brand" href="#">
                     <img style="padding-left:5px" src="imgs/MKLogoDark.png" width="50"/>
                     MKConnect
@@ -55,7 +56,6 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-
                     </ul>
 
                     <ul class="navbar-nav">
@@ -75,52 +75,33 @@
                             <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server">
                                 Logout</asp:LinkButton>
                         </li>
-
                     </ul>
                 </div>
-
-
-
             </nav>
-
-
         </div>
 
         <!-- Main Content Placeholder -->
-        <div>
-            <asp:ContentPlaceholder ID="Footer" runat="server">
+        <div class="mainbody">
+            <asp:ContentPlaceholder ID="Main" runat="server">
             </asp:ContentPlaceholder>
         </div>
-        <!-- Main Content Placeholder -->
 
-        <footer>
-            <div id="footer1" class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p>
-                            <asp.Linkbutton class="footerlinks" ID="linkButton10" runat="server">
-                                Admin Login
-                            </asp.Linkbutton>
-                            &nbsp;
-                            <asp.Linkbutton class="footerlinks" ID="AspLinkbutton11" runat="server">
-                                Member Management
-                            </asp.Linkbutton>
-                            &nbsp;
-                        </p>
-                    </div>
+        <footer class="footer">
+            <div id="footer" class="container-fluid">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <asp.Linkbutton class="footerlinks" ID="linkButton10" runat="server">
+                        Admin Login
+                    </asp.Linkbutton>
+                    <asp.Linkbutton class="footerlinks" ID="AspLinkbutton11" runat="server">
+                        Member Management
+                    </asp.Linkbutton>
                 </div>
             </div>
-            <div id="footer2" class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p style="color:grey">
-                            &copy 2023 Milton Keynes College All Rights Reserved.  
-                            <a class="footerlinks" href="#" target="_blank">
-                                Terms & Conditions
-                            </a>
-                        </p>
-                    </div>
-                </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                &copy 2023 Milton Keynes College All Rights Reserved.  
+                <a class="footerlinks" href="privacyTandCs" target="_blank">
+                    Terms & Conditions
+                </a>
             </div>
         </footer>
     </form>
