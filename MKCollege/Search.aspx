@@ -19,20 +19,37 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    
-                                    <input type="text" placeholder="Search..." />
-                                    <select style="height: 30px;">
-                                        <option>Mentors</option>
-                                        <option>Courses</option>
-                                        <option>Skills</option>
-                                    </select>
-                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                    <form method="post">
+                                        <input type="text" name="searchText" placeholder="Search..." />
+                                        <select name="searchType" style="height: 30px;">
+                                            <option>Mentors</option>
+                                            <option>Courses</option>
+                                            <option>Skills</option>
+                                        </select>
+                                        <button runat="server" id="btnRun" onserverclick="runSearch" title="Search">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                        <!--<button type="submit"><i class="fa fa-search"></i></button>-->
+                                    </form>
                                 </center>
                             </div>
                         </div>
 
                     </div>
                 </div>
+                 <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+
+                                <%= outputText %>
+
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+
             </div>
             <div class ="col-md-3">
             </div>

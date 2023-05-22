@@ -70,6 +70,10 @@
     <Content Include="adminCourseIssuing.aspx" />
     <Content Include="adminlogin.aspx" />
     <Content Include="adminUserManagement.aspx" />
+    <Content Include="App_Data\searchTest.mdf" />
+    <Content Include="App_Data\searchTest_log.ldf">
+      <DependentUpon>searchTest.mdf</DependentUpon>
+    </Content>
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
