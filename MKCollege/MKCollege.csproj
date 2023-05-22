@@ -2161,6 +2161,7 @@
     <Content Include="imgs\students-group.png" />
     <Content Include="imgs\writer.png" />
     <Content Include="mentorLogin.aspx" />
+    <Content Include="messages.aspx" />
     <Content Include="privacyTandCs.aspx" />
     <Content Include="Search.aspx" />
     <Content Include="userlogin.aspx" />
@@ -2225,6 +2226,13 @@
     </Compile>
     <Compile Include="mentorLogin.aspx.designer.cs">
       <DependentUpon>mentorLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="messages.aspx.cs">
+      <DependentUpon>messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="messages.aspx.designer.cs">
+      <DependentUpon>messages.aspx</DependentUpon>
     </Compile>
     <Compile Include="privacyTandCs.aspx.cs">
       <DependentUpon>privacyTandCs.aspx</DependentUpon>
