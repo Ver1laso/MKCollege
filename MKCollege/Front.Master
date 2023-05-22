@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Front.master.cs" Inherits="MKCollege.Front" %>
-
+                                                                                                                                                                                                                                                                                                                   
 <!DOCTYPE html>
 
 <html>
@@ -51,7 +51,7 @@
                             <a class="nav-link" href="#">Messages</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Calendar</a>
+                            <a class="nav-link" href="calenderPage.aspx">Calendar</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Contact</a>
@@ -94,9 +94,13 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                &copy 2023 Milton Keynes College All Rights Reserved.  
+                &copy 2023 
+                <a class="footerlinks" href="https://mkcollege.ac.uk/" target="_blank">
+                    Milton Keynes College
+                </a>
+                 All Rights Reserved.
                 <a class="footerlinks" href="privacyTandCs.aspx" target="_blank">
-                    Terms & Conditions
+                    Privacy Policy
                 </a>
             </div>
         </footer>
