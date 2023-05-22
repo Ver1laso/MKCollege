@@ -2163,6 +2163,7 @@
     <Content Include="fontawesome\svgs\solid\yen-sign.svg" />
     <Content Include="fontawesome\svgs\solid\yin-yang.svg" />
     <Content Include="fontawesome\svgs\solid\z.svg" />
+    <Content Include="Global.asax" />
     <Content Include="homePage.aspx" />
     <Content Include="imgs\1001469.png" />
     <Content Include="imgs\1189134.png" />
@@ -2191,7 +2192,7 @@
     <Content Include="imgs\students-group.png" />
     <Content Include="imgs\writer.png" />
     <Content Include="mentorLogin.aspx" />
-    <Content Include="messages.aspx" />
+    <Content Include="Chat.aspx" />
     <Content Include="privacyTandCs.aspx" />
     <Content Include="Search.aspx" />
     <Content Include="userlogin.aspx" />
@@ -2229,6 +2230,7 @@
     <Compile Include="calendar.aspx.designer.cs">
       <DependentUpon>calendar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChatHub.cs" />
     <Compile Include="courrsePage.aspx.cs">
       <DependentUpon>courrsePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2242,6 +2244,9 @@
     </Compile>
     <Compile Include="Front.Master.designer.cs">
       <DependentUpon>Front.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="homePage.aspx.cs">
       <DependentUpon>homePage.aspx</DependentUpon>
@@ -2257,12 +2262,12 @@
     <Compile Include="mentorLogin.aspx.designer.cs">
       <DependentUpon>mentorLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="messages.aspx.cs">
-      <DependentUpon>messages.aspx</DependentUpon>
+    <Compile Include="Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="messages.aspx.designer.cs">
-      <DependentUpon>messages.aspx</DependentUpon>
+    <Compile Include="Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
     </Compile>
     <Compile Include="privacyTandCs.aspx.cs">
       <DependentUpon>privacyTandCs.aspx</DependentUpon>
@@ -2279,6 +2284,7 @@
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Startup.cs" />
     <Compile Include="userlogin.aspx.cs">
       <DependentUpon>userlogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
