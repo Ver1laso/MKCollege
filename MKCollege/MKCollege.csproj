@@ -96,7 +96,12 @@
     <Content Include="adminlogin.aspx" />
     <Content Include="adminUserManagement.aspx" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <None Include="Bootstrap\js\jquery-2.1.0-vsdoc.js" />
     <Content Include="Bootstrap\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="Bootstrap\js\jquery.min3.7.0.js" />
+    <Content Include="Bootstrap\js\jquery.signalR.min2.4.3.js" />
+    <Content Include="Bootstrap\js\jquery.signalR2.4.3.js" />
+    <Content Include="Bootstrap\js\jquery3.7.0.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
     <Content Include="calendar.aspx" />
     <Content Include="courrsePage.aspx" />
