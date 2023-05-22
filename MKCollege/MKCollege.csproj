@@ -73,6 +73,7 @@
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
+    <Content Include="calendar.aspx" />
     <Content Include="courrsePage.aspx" />
     <Content Include="css\Site.css" />
     <Content Include="Datatable\css\jquery.dataTables.min.css" />
@@ -2189,6 +2190,13 @@
     </Compile>
     <Compile Include="adminUserManagement.aspx.designer.cs">
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="calendar.aspx.cs">
+      <DependentUpon>calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calendar.aspx.designer.cs">
+      <DependentUpon>calendar.aspx</DependentUpon>
     </Compile>
     <Compile Include="courrsePage.aspx.cs">
       <DependentUpon>courrsePage.aspx</DependentUpon>
