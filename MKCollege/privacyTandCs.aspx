@@ -1,8 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Front.Master" AutoEventWireup="true" CodeBehind="privacyTandCs.aspx.cs" Inherits="MKCollege.privacyTandCs" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
+
+<asp:Content ContentPlaceHolderID="Main" runat="server">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
