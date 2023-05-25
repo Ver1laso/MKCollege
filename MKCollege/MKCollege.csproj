@@ -69,6 +69,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -84,9 +85,9 @@
     <Content Include="adminlogin.aspx" />
     <Content Include="adminUserManagement.aspx" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
-    <Content Include="Bootstrap\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="Bootstrap\js\jquery-3.3.1.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
-    <Content Include="calenderPage.aspx" />
+    <Content Include="calendarPage.aspx" />
     <Content Include="courrsePage.aspx" />
     <Content Include="css\Site.css" />
     <Content Include="Datatable\css\jquery.dataTables.min.css" />
@@ -2167,6 +2168,7 @@
     <Content Include="imgs\in-homepage-banner.jpg" />
     <Content Include="imgs\library.png" />
     <Content Include="imgs\MKLogo.png" />
+    <Content Include="imgs\MKLogoDark.png" />
     <Content Include="imgs\Profile.png" />
     <Content Include="imgs\publisher.png" />
     <Content Include="imgs\search-online.png" />
@@ -2174,7 +2176,7 @@
     <Content Include="imgs\students-group.png" />
     <Content Include="imgs\writer.png" />
     <Content Include="mentorLogin.aspx" />
-    <Content Include="privacyTandCs.aspx" />
+    <Content Include="privacyPolicy.aspx" />
     <Content Include="Search.aspx" />
     <Content Include="userlogin.aspx" />
     <Content Include="userProfile.aspx" />
@@ -2204,21 +2206,13 @@
     <Compile Include="adminUserManagement.aspx.designer.cs">
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="calenderPage.aspx.cs">
-      <DependentUpon>calenderPage.aspx</DependentUpon>
+    <Compile Include="calendarPage.aspx.cs">
+      <DependentUpon>calendarPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="calenderPage.aspx.designer.cs">
-      <DependentUpon>calenderPage.aspx</DependentUpon>
+    <Compile Include="calendarPage.aspx.designer.cs">
+      <DependentUpon>calendarPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Calender\Models\Day.cs" />
-    <Compile Include="Calender\Models\DayEvents.cs" />
-    <Compile Include="Calender\Models\Month.cs" />
-    <Compile Include="Calender\Models\PaddedMonth.cs" />
-    <Compile Include="Calender\Models\Usings.cs" />
-    <Compile Include="Calender\Models\Year.cs" />
-    <Compile Include="Calender\MonthPlanner.cs" />
-    <Compile Include="Calender\YearPlanner.cs" />
     <Compile Include="courrsePage.aspx.cs">
       <DependentUpon>courrsePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2247,12 +2241,12 @@
     <Compile Include="mentorLogin.aspx.designer.cs">
       <DependentUpon>mentorLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="privacyTandCs.aspx.cs">
-      <DependentUpon>privacyTandCs.aspx</DependentUpon>
+    <Compile Include="privacyPolicy.aspx.cs">
+      <DependentUpon>privacyPolicy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="privacyTandCs.aspx.designer.cs">
-      <DependentUpon>privacyTandCs.aspx</DependentUpon>
+    <Compile Include="privacyPolicy.aspx.designer.cs">
+      <DependentUpon>privacyPolicy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search.aspx.cs">
@@ -2349,7 +2343,9 @@
     <Content Include="Front.Master" />
     <Content Include="imgs\mentoring.avif" />
     <Content Include="imgs\students-group.avif" />
-    <Content Include="Calender\Calender.csproj" />
+    <Content Include="Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Bootstrap\js\popper.min.js.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

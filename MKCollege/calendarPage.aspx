@@ -4,7 +4,10 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="Main" runat="server">
-    <div class="container">
+    <div class="container calendar-page">
+        <h1 class="calendar-title text-center">
+            My Calendar
+        </h1>
         <div id="calendar">
         </div>
     </div>

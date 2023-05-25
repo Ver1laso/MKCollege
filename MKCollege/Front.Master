@@ -14,11 +14,18 @@
     <%--Site css--%>
     <link href="css/site.css" rel="stylesheet" />
     <%--jquery--%>
-    <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
     <%--popper js--%>
     <script src="Bootstrap/js/popper.min.js"></script>
     <%--bootstrap js--%>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -51,7 +58,7 @@
                             <a class="nav-link" href="#">Messages</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="calenderPage.aspx">Calendar</a>
+                            <a class="nav-link" href="calendarPage.aspx">Calendar</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Contact</a>
@@ -99,7 +106,7 @@
                     Milton Keynes College
                 </a>
                  All Rights Reserved.
-                <a class="footerlinks" href="privacyTandCs.aspx" target="_blank">
+                <a class="footerlinks" href="privacyPolicy.aspx" target="_blank">
                     Privacy Policy
                 </a>
             </div>

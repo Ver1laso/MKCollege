@@ -21,6 +21,48 @@
 }
 
 #calendar {
-    border: 5px solid red;
-    border-radius:4px;
+    padding: 50px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-color: #192f45;
+}
+
+.calendar-page {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.fc-button {
+    background-color: steelblue !important;
+    font-weight: bold !important;
+}
+
+.fc-today {
+    border: 2px solid steelblue !important;
+    background-color: lightskyblue !important;
+}
+
+.fc-state-default {
+    background-color: lightcyan !important;
+}
+
+.fc-widget-content {
+    background-color: white !important;
+    border-color: #ddd !important;
+}
+
+.fc-other-month {
+    background-color: whitesmoke !important;
+}
+
+.policy-title {
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.privacy-policy {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.policy-list {
+    font-size: larger !important;
 }

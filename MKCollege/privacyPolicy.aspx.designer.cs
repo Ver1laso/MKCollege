@@ -9,9 +9,7 @@
 
 namespace MKCollege
 {
-
-
-    public partial class privacyTandCs
+    public partial class privacyPolicy
     {
     }
 }
