@@ -12,7 +12,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MKCollege</RootNamespace>
     <AssemblyName>MKCollege</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44344</IISExpressSSLPort>
@@ -22,6 +22,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,6 +56,22 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Owin, Version=4.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.4.2.2\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
@@ -80,12 +97,9 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -96,14 +110,14 @@
     <Content Include="adminlogin.aspx" />
     <Content Include="adminUserManagement.aspx" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Bootstrap\js\jquery-3.3.1.min.js" />
+    <Content Include="Bootstrap\js\popper.min.js" />
+    <Content Include="calendarPage.aspx" />
     <None Include="Bootstrap\js\jquery-2.1.0-vsdoc.js" />
-    <Content Include="Bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="Bootstrap\js\jquery.min3.7.0.js" />
     <Content Include="Bootstrap\js\jquery.signalR.min2.4.3.js" />
     <Content Include="Bootstrap\js\jquery.signalR2.4.3.js" />
     <Content Include="Bootstrap\js\jquery3.7.0.js" />
-    <Content Include="Bootstrap\js\popper.min.js" />
-    <Content Include="calendar.aspx" />
     <Content Include="courrsePage.aspx" />
     <Content Include="css\Site.css" />
     <Content Include="Datatable\css\jquery.dataTables.min.css" />
@@ -2185,6 +2199,7 @@
     <Content Include="imgs\in-homepage-banner.jpg" />
     <Content Include="imgs\library.png" />
     <Content Include="imgs\MKLogo.png" />
+    <Content Include="imgs\MKLogoDark.png" />
     <Content Include="imgs\Profile.png" />
     <Content Include="imgs\publisher.png" />
     <Content Include="imgs\search-online.png" />
@@ -2192,8 +2207,8 @@
     <Content Include="imgs\students-group.png" />
     <Content Include="imgs\writer.png" />
     <Content Include="mentorLogin.aspx" />
+    <Content Include="privacyPolicy.aspx" />
     <Content Include="Chat.aspx" />
-    <Content Include="privacyTandCs.aspx" />
     <Content Include="Search.aspx" />
     <Content Include="userlogin.aspx" />
     <Content Include="userProfile.aspx" />
@@ -2223,12 +2238,12 @@
     <Compile Include="adminUserManagement.aspx.designer.cs">
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="calendar.aspx.cs">
-      <DependentUpon>calendar.aspx</DependentUpon>
+    <Compile Include="calendarPage.aspx.cs">
+      <DependentUpon>calendarPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="calendar.aspx.designer.cs">
-      <DependentUpon>calendar.aspx</DependentUpon>
+    <Compile Include="calendarPage.aspx.designer.cs">
+      <DependentUpon>calendarPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChatHub.cs" />
     <Compile Include="courrsePage.aspx.cs">
@@ -2262,6 +2277,8 @@
     <Compile Include="mentorLogin.aspx.designer.cs">
       <DependentUpon>mentorLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="privacyPolicy.aspx.cs">
+      <DependentUpon>privacyPolicy.aspx</DependentUpon>
     <Compile Include="Chat.aspx.cs">
       <DependentUpon>Chat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2269,12 +2286,10 @@
     <Compile Include="Chat.aspx.designer.cs">
       <DependentUpon>Chat.aspx</DependentUpon>
     </Compile>
-    <Compile Include="privacyTandCs.aspx.cs">
-      <DependentUpon>privacyTandCs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="privacyTandCs.aspx.designer.cs">
-      <DependentUpon>privacyTandCs.aspx</DependentUpon>
+    <Compile Include="privacyPolicy.aspx.designer.cs">
+      <DependentUpon>privacyPolicy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search.aspx.cs">
@@ -2372,6 +2387,9 @@
     <Content Include="Front.Master" />
     <Content Include="imgs\mentoring.avif" />
     <Content Include="imgs\students-group.avif" />
+    <Content Include="Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Bootstrap\js\popper.min.js.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

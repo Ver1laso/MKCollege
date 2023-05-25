@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Front.master.cs" Inherits="MKCollege.Front" %>
-
+                                                                                                                                                                                                                                                                                                                   
 <!DOCTYPE html>
 
 <html>
@@ -14,18 +14,23 @@
     <%--Site css--%>
     <link href="css/site.css" rel="stylesheet" />
     <%--jquery--%>
-    <script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="Bootstrap/js/jquery-3.3.1.min.js"></script>
     <%--popper js--%>
     <script src="Bootstrap/js/popper.min.js"></script>
     <%--bootstrap js--%>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
 
+    <!-- FullCalendar JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    
+    <!-- chat bot -->
     <script src="Bootstrap/js/jquery.signalR.min2.4.3.js"></script>
-
-
     <script src="signalr/hubs"></script>
-
-
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -57,7 +62,7 @@
                             <a class="nav-link" href="Chat.aspx">Messages</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="calendar.aspx">Calendar</a>
+                            <a class="nav-link" href="calendarPage.aspx">Calendar</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Contact</a>
@@ -100,9 +105,13 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                &copy 2023 Milton Keynes College All Rights Reserved.  
-                <a class="footerlinks" href="privacyTandCs.aspx" target="_blank">
-                    Terms & Conditions
+                &copy 2023 
+                <a class="footerlinks" href="https://mkcollege.ac.uk/" target="_blank">
+                    Milton Keynes College
+                </a>
+                 All Rights Reserved.
+                <a class="footerlinks" href="privacyPolicy.aspx" target="_blank">
+                    Privacy Policy
                 </a>
             </div>
         </footer>
