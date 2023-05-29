@@ -77,15 +77,13 @@
                     <div class="container">
                         <div class="row justify-content-between">
                             <center>
-                            <div class="col-md-6">
-                                <label>Email Address</label>
-                                <div class="form-group" style="margin-top: 10px">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox3"
-                        runat="server" placeholder="Email Address" TextMode="Email"></asp:TextBox>
+                                <div class="col-md-6">
+                                    <label>Email Address</label>
+                                        <div class="form-group" style="margin-top: 10px">
+                                            <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Email Address" TextMode="Email"></asp:TextBox>
+                                        </div>
                                 </div>
-
-                            </div>
-                             </center>
+                            </center>
                         </div>
                     </div>
 

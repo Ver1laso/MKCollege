@@ -65,12 +65,7 @@
             });
 
         });
-
 </script>
-
 </body>
 </html>
-
-
-
 </asp:Content>

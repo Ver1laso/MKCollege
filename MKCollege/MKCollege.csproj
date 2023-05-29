@@ -2193,6 +2193,7 @@
     <Content Include="imgs\writer.png" />
     <Content Include="mentorLogin.aspx" />
     <Content Include="Chat.aspx" />
+    <Content Include="messages.aspx" />
     <Content Include="privacyTandCs.aspx" />
     <Content Include="Search.aspx" />
     <Content Include="userlogin.aspx" />
@@ -2268,6 +2269,12 @@
     </Compile>
     <Compile Include="Chat.aspx.designer.cs">
       <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="messages.aspx.cs">
+      <DependentUpon>messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="messages.aspx.designer.cs">
+      <DependentUpon>messages.aspx</DependentUpon>
     </Compile>
     <Compile Include="privacyTandCs.aspx.cs">
       <DependentUpon>privacyTandCs.aspx</DependentUpon>
