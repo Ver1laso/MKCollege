@@ -1,15 +1,18 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Front.Master" AutoEventWireup="true" CodeBehind="privacyTandCs.aspx.cs" Inherits="MKCollege.privacyTandCs" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Front.Master" AutoEventWireup="true" CodeBehind="privacyPolicy.aspx.cs" Inherits="MKCollege.privacyTandCs" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
-    <div class="container">
+
+<asp:Content ContentPlaceHolderID="Main" runat="server">
+    <div class="container privacy-policy">
+
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center">Terms and Conditions</h2>
+                <h2 class="text-center policy-title">Privacy Policy</h2>
             </div>
         </div>
-        <div class="row">
+
+        <div class="row policy-list">
             <div class="col-md-12">
                 <p>Welcome to MK College Connect! Please read these Terms and Conditions carefully before using our website/application. By accessing or using our website/application, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these Terms and Conditions, then you may not access our website/application.</p>
 
