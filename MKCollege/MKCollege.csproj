@@ -95,15 +95,17 @@
     <Content Include="adminCourseIssuing.aspx" />
     <Content Include="adminlogin.aspx" />
     <Content Include="adminUserManagement.aspx" />
+    <Content Include="Bootstrap\css\fullcalendar.min.css" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <None Include="Bootstrap\js\jquery-2.1.0-vsdoc.js" />
+    <Content Include="Bootstrap\js\fullcalendar.min.js" />
     <Content Include="Bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="Bootstrap\js\jquery.min3.7.0.js" />
     <Content Include="Bootstrap\js\jquery.signalR.min2.4.3.js" />
     <Content Include="Bootstrap\js\jquery.signalR2.4.3.js" />
     <Content Include="Bootstrap\js\jquery3.7.0.js" />
+    <Content Include="Bootstrap\js\moment.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
-    <Content Include="calendar.aspx" />
     <Content Include="courrsePage.aspx" />
     <Content Include="css\Site.css" />
     <Content Include="Datatable\css\jquery.dataTables.min.css" />
@@ -2223,13 +2225,6 @@
     </Compile>
     <Compile Include="adminUserManagement.aspx.designer.cs">
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="calendar.aspx.cs">
-      <DependentUpon>calendar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="calendar.aspx.designer.cs">
-      <DependentUpon>calendar.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChatHub.cs" />
     <Compile Include="courrsePage.aspx.cs">
