@@ -2253,7 +2253,6 @@
     <Compile Include="adminUserManagement.aspx.designer.cs">
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ChatHub.cs" />
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
@@ -2263,7 +2262,6 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ChatHub.cs" />
     <Compile Include="courrsePage.aspx.cs">
       <DependentUpon>courrsePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2280,6 +2278,7 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="homePage.aspx.cs">
       <DependentUpon>homePage.aspx</DependentUpon>
