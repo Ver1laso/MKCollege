@@ -23,8 +23,8 @@
                                         <input type="text" name="searchText" placeholder="Search..." />
                                         <select name="searchType" style="height: 30px;">
                                             <option>Mentors</option>
-                                            <option>Courses</option>
-                                            <option>Skills</option>
+                                            <option>Courses By Name</option>
+                                            <option>Courses By Skill</option>
                                         </select>
                                         <button runat="server" id="btnRun" onserverclick="runSearch" title="Search">
                                             <i class="fa fa-search"></i>
