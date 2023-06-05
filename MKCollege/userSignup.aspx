@@ -9,7 +9,7 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <div class"row">
+                        <div class="row">
                             <div class="col">
                                 <center>
                                     <img width="100px" src="imgs/generaluser.png"/>
@@ -18,7 +18,7 @@
                             </div>
                         </div>
 
-                        <div class"row">
+                        <div class="row">
                             <div class="col">
                                 <center>
                                     <h4>User Registration</h4>
@@ -26,12 +26,11 @@
                             </div>
                         </div>
 
-                        <div class"row">
+                        <div class="row">
                             <div class="col">
                                 <hr class="solid">
                             </div>
                         </div>
-
 
                     <div class="container">
                         <div class="row justify-content-between">
@@ -48,7 +47,7 @@
                                 <label>Date of Birth</label>
                                 <div class="form-group" style="margin-top: 10px">
                                     <asp:TextBox CssClass="form-control" ID="TextBox3"
-                        runat="server" placeholder="Date of Birth" TextMode="Date"></asp:TextBox>
+                        runat="server" placeholder="Date of Birth"></asp:TextBox>
                                 </div>
 
                             </div>
@@ -111,11 +110,11 @@
                             <div class="col">
   
                                 <div class="form-group" style="margin-top: 10px">
-                                    <asp:Button class="btn btn-primary w-100" ID="Button1" 
+                                    <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" 
                         runat="server" Text="Sign Up" />
 
                                 </div>
-
+</form>
 
                             </div>
                         </div>
