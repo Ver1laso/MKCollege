@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Front.master.cs" Inherits="MKCollege.Front" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Front.Master.cs" Inherits="MKCollege.Front" %>
                                                                                                                                                                                                                                                                                                                    
 <!DOCTYPE html>
 
