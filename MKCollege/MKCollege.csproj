@@ -132,7 +132,6 @@
     <Content Include="Bootstrap\js\jquery.signalR2.4.3.js" />
     <Content Include="Bootstrap\js\jquery3.7.0.js" />
     <Content Include="Bootstrap\js\moment.min.js" />
-    <Content Include="calendar.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="courrsePage.aspx" />
     <Content Include="css\Site.css" />
@@ -2225,7 +2224,6 @@
     <Content Include="mentorLogin.aspx" />
     <Content Include="messages.aspx" />
     <Content Include="privacyPolicy.aspx" />
-    <Content Include="Chat.aspx" />
     <Content Include="Search.aspx" />
     <Content Include="userlogin.aspx" />
     <Content Include="userProfile.aspx" />
@@ -2258,7 +2256,6 @@
     <Compile Include="ChatHub.cs" />
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="calendarPage.aspx.designer.cs">
       <DependentUpon>calendarPage.aspx</DependentUpon>
@@ -2306,15 +2303,8 @@
       <DependentUpon>privacyPolicy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Chat.aspx.cs">
-      <DependentUpon>Chat.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="messages.aspx.designer.cs">
       <DependentUpon>messages.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Chat.aspx.designer.cs">
-      <DependentUpon>Chat.aspx</DependentUpon>
     </Compile>
     <Compile Include="privacyPolicy.aspx.designer.cs">
       <DependentUpon>privacyPolicy.aspx</DependentUpon>
@@ -2426,9 +2416,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
