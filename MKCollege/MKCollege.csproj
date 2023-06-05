@@ -96,6 +96,7 @@
     <Content Include="adminlogin.aspx" />
     <Content Include="adminUserManagement.aspx" />
     <Content Include="Bootstrap\css\fullcalendar.min.css" />
+    <Content Include="Bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <None Include="Bootstrap\js\jquery-2.1.0-vsdoc.js" />
     <Content Include="Bootstrap\js\fullcalendar.min.js" />
@@ -106,6 +107,7 @@
     <Content Include="Bootstrap\js\jquery3.7.0.js" />
     <Content Include="Bootstrap\js\moment.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
+    <Content Include="contact.aspx" />
     <Content Include="courrsePage.aspx" />
     <Content Include="css\Site.css" />
     <Content Include="Datatable\css\jquery.dataTables.min.css" />
@@ -2194,7 +2196,6 @@
     <Content Include="imgs\students-group.png" />
     <Content Include="imgs\writer.png" />
     <Content Include="mentorLogin.aspx" />
-    <Content Include="Chat.aspx" />
     <Content Include="messages.aspx" />
     <Content Include="privacyTandCs.aspx" />
     <Content Include="Search.aspx" />
@@ -2227,6 +2228,13 @@
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChatHub.cs" />
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="courrsePage.aspx.cs">
       <DependentUpon>courrsePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2257,13 +2265,6 @@
     </Compile>
     <Compile Include="mentorLogin.aspx.designer.cs">
       <DependentUpon>mentorLogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Chat.aspx.cs">
-      <DependentUpon>Chat.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Chat.aspx.designer.cs">
-      <DependentUpon>Chat.aspx</DependentUpon>
     </Compile>
     <Compile Include="messages.aspx.cs">
       <DependentUpon>messages.aspx</DependentUpon>
