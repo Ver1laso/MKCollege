@@ -2255,6 +2255,7 @@
     </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="calendarPage.aspx.designer.cs">
       <DependentUpon>calendarPage.aspx</DependentUpon>
