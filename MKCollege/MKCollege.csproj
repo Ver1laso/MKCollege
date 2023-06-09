@@ -2284,7 +2284,6 @@
     </Compile>
     <Compile Include="messages.aspx.cs">
       <DependentUpon>messages.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="privacyPolicy.aspx.cs">
       <DependentUpon>privacyPolicy.aspx</DependentUpon>

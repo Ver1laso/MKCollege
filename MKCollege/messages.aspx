@@ -22,7 +22,6 @@
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div>
-
                         <hr />
 
                         <div class="form-group">

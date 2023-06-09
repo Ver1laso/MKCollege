@@ -16,6 +16,7 @@ namespace MKCollege
         public int ReceiverID { get; set; }
         public string MessageText { get; set; }
         public DateTime SentDate { get; set; }
+        public string SenderName { get; set; } // Add SenderName property
     }
 
     public partial class messages : System.Web.UI.Page
@@ -107,7 +108,8 @@ namespace MKCollege
                                 SenderID = Convert.ToInt32(reader["SenderID"]),
                                 ReceiverID = Convert.ToInt32(reader["ReceiverID"]),
                                 MessageText = reader["MessageText"].ToString(),
-                                SentDate = Convert.ToDateTime(reader["SentDate"])
+                                SentDate = Convert.ToDateTime(reader["SentDate"]),
+                                SenderName = reader["SenderName"].ToString() // Assign sender's name
                             };
 
                             messages.Add(message);
