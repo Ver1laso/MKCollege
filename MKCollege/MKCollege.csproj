@@ -132,6 +132,7 @@
     <Content Include="Bootstrap\js\jquery.signalR2.4.3.js" />
     <Content Include="Bootstrap\js\jquery3.7.0.js" />
     <Content Include="Bootstrap\js\moment.min.js" />
+    <Content Include="contact.aspx" />
     <Content Include="courrsePage.aspx" />
     <Content Include="css\Site.css" />
     <Content Include="Datatable\css\jquery.dataTables.min.css" />
@@ -2253,6 +2254,13 @@
     </Compile>
     <Compile Include="calendarPage.aspx.designer.cs">
       <DependentUpon>calendarPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="courrsePage.aspx.cs">
       <DependentUpon>courrsePage.aspx</DependentUpon>
