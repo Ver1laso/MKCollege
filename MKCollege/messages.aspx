@@ -1,46 +1,53 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Front.Master" AutoEventWireup="true" CodeBehind="messages.aspx.cs" Inherits="MKCollege.messages" %>
+﻿<%@ Page Title= "" Language="C#" MasterPageFile="~/Front.Master" AutoEventWireup="true" CodeBehind="messages.aspx.cs" Inherits="MKCollege.messages" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
 
-    <div class="container mt-5">
-        <h1>Message System</h1>
+<!DOCTYPE html>
 
+<body>
+    <div class="container">
+        <h1>Messages</h1>
         <div class="row">
-            <div class="col-md-8">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Messages</h5>
-
-                        <div class="message-container">
-                            <asp:Repeater ID="messageRepeater" runat="server">
-                                <ItemTemplate>
-                                    <div class="message">
-                                        <p><strong><%# Eval("SenderName") %>:</strong> <%# Eval("MessageText") %></p>
-                                        <small><%# Eval("SentDate", "{0:dd MMM yyyy HH:mm}") %></small>
-                                    </div>
-                                </ItemTemplate>
-                            </asp:Repeater>
-                        </div>
-                        <hr />
-
-                        <div class="form-group">
-                            <asp:TextBox ID="txtMessage" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="3" placeholder="Compose a message"></asp:TextBox>
-                        </div>
-
-                        <div class="text-end">
-                            <asp:Button ID="btnSend" runat="server" Text="Send" CssClass="btn btn-primary" OnClick="btnSend_Click" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <asp:HyperLink ID="lnkLoadMore" runat="server" NavigateUrl="Messages.aspx?page=2" CssClass="btn btn-secondary">Load More</asp:HyperLink>
-                </div>
+            <div class="col-md-6">
+                <h2>Message Listing</h2>
+                <table class="table table-striped">
+                    <tr>
+                        <th>From</th>
+                        <th>Subject</th>
+                        <th>Received</th>
+                    </tr>
+                    <asp:Repeater ID="messageRepeater" runat="server">
+                        <ItemTemplate>
+                            <tr>
+                                <td><%# Eval("From") %></td>
+                                <td><%# Eval("Subject") %></td>
+                                <td><%# Eval("ReceivedDate") %></td>
+                            </tr>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </table>
             </div>
-
-            <!-- Sidebar or additional content can be added here -->
+            <div class="col-md-6">
+                <h2>Compose Message</h2>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="txtTo">To:</label>
+                        <input type="text" id="txtTo" class="form-control" name="txtTo" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="txtSubject">Subject:</label>
+                        <input type="text" id="txtSubject" class="form-control" name="txtSubject" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="txtMessage">Message:</label>
+                        <textarea id="txtMessage" class="form-control" name="txtMessage" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
         </div>
     </div>
-
+</body>
 </asp:Content>

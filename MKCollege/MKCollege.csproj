@@ -2292,13 +2292,15 @@
     </Compile>
     <Compile Include="messages.aspx.cs">
       <DependentUpon>messages.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="privacyPolicy.aspx.cs">
-      <DependentUpon>privacyPolicy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="messages.aspx.designer.cs">
       <DependentUpon>messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="messages.cs" />
+    <Compile Include="privacyPolicy.aspx.cs">
+      <DependentUpon>privacyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="privacyPolicy.aspx.designer.cs">
       <DependentUpon>privacyPolicy.aspx</DependentUpon>
