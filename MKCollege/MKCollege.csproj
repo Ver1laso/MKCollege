@@ -77,7 +77,7 @@
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
-    <Content Include="courrsePage.aspx" />
+    <Content Include="coursePage.aspx" />
     <Content Include="css\Site.css" />
     <Content Include="Datatable\css\jquery.dataTables.min.css" />
     <Content Include="Datatable\js\jquery.dataTables.min.js" />
@@ -2194,12 +2194,12 @@
     <Compile Include="adminUserManagement.aspx.designer.cs">
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="courrsePage.aspx.cs">
-      <DependentUpon>courrsePage.aspx</DependentUpon>
+    <Compile Include="coursePage.aspx.cs">
+      <DependentUpon>coursePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="courrsePage.aspx.designer.cs">
-      <DependentUpon>courrsePage.aspx</DependentUpon>
+    <Compile Include="coursePage.aspx.designer.cs">
+      <DependentUpon>coursePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Front.Master.cs">
       <DependentUpon>Front.Master</DependentUpon>

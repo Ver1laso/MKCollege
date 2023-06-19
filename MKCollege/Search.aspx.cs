@@ -6,17 +6,18 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
-
+using System.CodeDom;
 
 namespace MKCollege
 {
     public partial class Search : System.Web.UI.Page
     {
+        private const string COURSESPAGENAME = "coursePage.aspx";
+
         public string outputText;
         protected void Page_Load(object sender, EventArgs e)
         {
             outputText = "Note: Delimit skill search with comma, max 3 skills.";
-
         }
 
         public void runSearch(object sender, EventArgs e)
@@ -40,8 +41,6 @@ namespace MKCollege
 
             conn.ConnectionString = @"Data Source=mkconnect.database.windows.net;Initial Catalog=MKConnect;User ID=MKConnect;Password=Connectmk3";
             conn.Open();
-
-
 
 
             // Branch based off of searchType.
@@ -91,7 +90,7 @@ namespace MKCollege
                 case "Courses By Skill":
                     //Query courses table, getting specified fields.
                     //courseName, Description, skilltags, mentor, length and availability.
-                    qstring = @"SELECT courseName, Description, (ISNULL(skillTag_1, ' ') + '<br/>'+ ISNULL(skillTag_2, ' ') + '<br/>' + ISNULL(skillTag_3, ' ')) AS Skills, Mentor, Length, Availability FROM Courses";
+                    qstring = @"SELECT courseName, Description, ISNULL(skillTag_1, ' ') AS Skill1, ISNULL(skillTag_2, ' ') AS Skill2, ISNULL(skillTag_3, ' ') AS Skill3, Mentor, Length, Availability FROM Courses";
 
                     if (searchType.Equals("Courses By Name"))
                     {
@@ -105,7 +104,7 @@ namespace MKCollege
                         //Get array of search items delim by ','
                         string[] search_item_arr = searchText.Split(new char[] { ',' });
 
-                        //There are three cases: 1 item, 2 items or 3 items.
+                        //There are three cases: 1 skill input by user, 2 or 3.
 
                         //1 Item
                         add_search_courses_sk(ref qstring, search_item_arr[0], true);
@@ -147,11 +146,36 @@ namespace MKCollege
                         {
                             outputText += @"<tr>";
 
-                            String[] fields = { "courseName", "Description", "Skills", "Mentor", "Length", "Availability" };
+                            String[] skills = { "Skill1", "Skill2", "Skill3" };
+                            String[] fields = { "courseName", "Description", skills[0], skills[1], skills[2], "Mentor", "Length", "Availability" };
+
+
 
                             foreach (string field in fields)
                             {
-                                outputText += @"<td>" + myReader[field].ToString() + @"</td>";
+                                //TODO: Use switch... case... instead of convulted if else below.
+                                
+                                //When displaying skills, we will concat. them with ', ' delimiting.
+                                if (skills.Contains(field))
+                                {
+                                    if (field == skills[2])
+                                    {
+                                        add_skills( ref outputText, myReader, skills);
+                                    }
+                                    
+                                }
+                                else
+                                {
+                                    if ( field == fields[0]) //courseName
+                                    {
+                                        add_coursename(ref outputText, myReader[field].ToString());
+                                    }
+                                    else
+                                    {
+                                        outputText += @"<td>" + myReader[field].ToString() + @"</td>";
+                                    }
+                                    
+                                }
                             }
 
                             outputText += @"</tr>";
@@ -201,9 +225,51 @@ namespace MKCollege
 
         }
 
-        private void strip_spaces( ref string text )
+        public void strip_spaces( ref string text )
         {
             text = text.Replace(" ", "");
+        }
+
+        private void add_skills(ref string outputHere, SqlDataReader theReader, string[] fields)
+        {
+            List<string> outputList = new List<string>();
+            string outputSkills = "";
+
+            foreach (string field in fields)
+            {
+                outputList.Add(theReader[field].ToString().Replace(" ", ""));
+            }
+
+
+            foreach (string field in fields)
+            {
+                if (theReader[field].ToString().Replace(" ", "") != "")
+                {
+                    if (outputSkills == "")
+                    {
+                        outputSkills += theReader[field].ToString().Replace(" ", "");
+                    }
+                    else
+                    {
+                        outputSkills += ", " + theReader[field].ToString().Replace(" ", "");
+                    }
+
+
+                }
+
+            }
+
+            outputHere += @"<td>" + outputSkills + @"</td>";
+        }
+
+        //Give output for coursename with link to course page.
+        private void add_coursename( ref string outputThis, string courseName)
+        {   
+            outputThis += @"<td><a href=";
+
+            outputThis += "\"" + COURSESPAGENAME + "?courseName=" + courseName + "\"";
+
+            outputThis += @" >" + courseName + @"</a></td>";
         }
 
     }
