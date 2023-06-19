@@ -11,7 +11,16 @@ namespace MKCollege
 {
 
 
-    public partial class Chat
+    public partial class messages
     {
+
+        /// <summary>
+        /// messageRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater messageRepeater;
     }
 }
