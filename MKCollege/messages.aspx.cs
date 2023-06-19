@@ -57,10 +57,11 @@ namespace MKCollege
                         while (reader.Read())
                         {
                             string fromUser = reader.GetString(0);
+                            string toUser = reader.GetString(0);
                             string subject = reader.GetString(1);
-                            DateTime receivedDate = reader.GetDateTime(2);
+                            string content = reader.GetString(500);
 
-                            Message message = new Message(fromUser, subject, receivedDate);
+                            Message message = new Message(fromUser, toUser, subject, content);
                             messages.Add(message);
                         }
                     }

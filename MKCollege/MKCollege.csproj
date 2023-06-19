@@ -2254,6 +2254,10 @@
     <Compile Include="adminUserManagement.aspx.designer.cs">
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
     </Compile>
+    <Compile Include="calendarPage.aspx.cs">
+      <DependentUpon>calendarPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="calendarPage.aspx.designer.cs">
       <DependentUpon>calendarPage.aspx</DependentUpon>
     </Compile>
