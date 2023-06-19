@@ -25,7 +25,7 @@ namespace MKCollege
 
             //Get course name from url.
             courseName = Request.Params["courseName"];
-
+            isEnrolled = getEnrolmentStatus();
 
             //Initialise other properties.
             string qstring;
@@ -78,6 +78,7 @@ namespace MKCollege
                                 length = myReader[field].ToString();
                                 break;
                             case "Availability":
+                                object bob = myReader[field].ToString().Replace(" ", "");
                                 if (Int32.Parse(  myReader[field].ToString().Replace(" ", "") )>0)
                                 {
                                     capacity = myReader[field].ToString();
@@ -122,10 +123,13 @@ namespace MKCollege
 
         public void runEnrol(object sender, EventArgs e)
         {
+            Response.Write("TEST");
+            
             //Initialise other properties.
             string qstring;
             SqlCommand myCommand;
             SqlDataReader myReader;
+
 
             // Connect to DB.
             SqlConnection conn = new SqlConnection();
@@ -145,14 +149,14 @@ namespace MKCollege
             myReader = myCommand.ExecuteReader();
             bool shallEnrol = false;
             userID = "1";
-            string courseID;
+            string courseID = "-1";
 
 
             while (myReader.Read())
             {
                 if (myReader.HasRows)
                 {
-                    if (Int32.Parse(myReader["availibility"].ToString()) >0)
+                    if (Int32.Parse(myReader["Availability"].ToString()) >0)
                     {
                         shallEnrol = true;
                         courseID = myReader["courseID"].ToString();
@@ -160,10 +164,12 @@ namespace MKCollege
                 }
             }
 
+            myReader.Close();
+
             if (shallEnrol)
             {
                 //query
-                qstring = @"INSERT INTO Enrolled(courseName, Mentor, userID) VALUES( '" + courseName + "', '" + mentor +"', '" + userID + "')";
+                qstring = @"INSERT INTO Enrolled(courseID, courseName, Mentor, userID) VALUES( '" + courseID + "', '" + courseName + "', '" + mentor +"', '" + userID + "')";
 
                 //Ex. query.
                 myCommand = new SqlCommand(qstring, conn);
@@ -175,6 +181,46 @@ namespace MKCollege
         public void runWithdraw(object sender, EventArgs e)
         {
 
+        }
+
+        public bool getEnrolmentStatus()
+        {
+            userID = "1";
+
+
+            //Initialise other properties.
+            string qstring;
+            SqlCommand myCommand;
+            SqlDataReader myReader;
+
+            // Connect to DB.
+            SqlConnection conn = new SqlConnection();
+
+            //Course name
+            //Get course name from url.
+            courseName = Request.Params["courseName"];
+
+            conn.ConnectionString = @"Data Source=mkconnect.database.windows.net;Initial Catalog=MKConnect;User ID=MKConnect;Password=Connectmk3";
+            conn.Open();
+
+            //query
+            qstring = @"SELECT * FROM Enrolled WHERE courseName='" + courseName + "' AND userID ='" + userID  +"'";
+
+            //Ex. query.
+            myCommand = new SqlCommand(qstring, conn);
+            myReader = myCommand.ExecuteReader();
+
+            while (myReader.Read())
+            {
+                if (myReader.HasRows)
+                {
+                    conn.Close();
+                    return true;
+                }
+            }
+
+            conn.Close();
+            return false;
         }
     }
 }

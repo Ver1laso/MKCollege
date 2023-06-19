@@ -99,9 +99,12 @@
                             <div class="col-4 mx-auto ">
                                 <center>  
                                 <div class="form-group" style="margin-top: 10px">
+                                    <form method="post">
 
-                                    <%=(!isEnrolled && capacity != "Full") ? @"<button class=""btn btn-success w-100"" id=""btnRun"" onserverclick=""runEnrol"">Enrol</button>" : ( (isEnrolled) ?  @"<button class=""btn btn-danger w-100"" id=""btnRun"" onserverclick=""runWithdraw"">Withdraw</button>" : "" ) %>
-
+                                        <button runat="server" class="btn btn-success w-100" id="btnRun" onserverclick="runEnrol">Enrol</button>
+                                    
+                                    
+                                    </form>
 
                                 </div>
                                 </center>
