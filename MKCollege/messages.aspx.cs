@@ -28,11 +28,10 @@ namespace MKCollege
         {
             string fromUser = "Your fromUser value"; // Replace with the actual value
             string toUser = "Your toUser value"; // Replace with the actual value
-            string subject = Request.Form["txtSubject"];
             string message = Request.Form["txtMessage"];
 
             // Create a new message object
-            Message newMessage = new Message(fromUser, toUser, subject, message);
+            Message newMessage = new Message(fromUser, toUser, message);
 
             // Save the message to the database
             SaveMessage(newMessage);
@@ -45,10 +44,10 @@ namespace MKCollege
         {
             List<Message> messages = new List<Message>();
 
-            string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["MKConnectDatabase"].ConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT SenderID, Subject, ReceivedDate FROM Messages";
+                string query = "SELECT SenderID, RecipientID, MessageText, sentDate FROM Messages";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     connection.Open();
@@ -58,10 +57,9 @@ namespace MKCollege
                         {
                             string fromUser = reader.GetString(0);
                             string toUser = reader.GetString(0);
-                            string subject = reader.GetString(1);
                             string content = reader.GetString(500);
 
-                            Message message = new Message(fromUser, toUser, subject, content);
+                            Message message = new Message(fromUser, toUser, content);
                             messages.Add(message);
                         }
                     }
@@ -77,12 +75,11 @@ namespace MKCollege
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "INSERT INTO Messages (SenderID, RecipientID, MessageText, sentDate) " +
-                               "VALUES (@FromUser, @ToUser, @Subject, @Content, @SentDate)";
+                               "VALUES (@FromUser, @ToUser, @Content, @SentDate)";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@FromUser", message.SenderID);
                     command.Parameters.AddWithValue("@ToUser", message.RecipientID);
-                    command.Parameters.AddWithValue("@Subject", message.Subject);
                     command.Parameters.AddWithValue("@Content", message.MessageText);
                     command.Parameters.AddWithValue("@SentDate", message.sentDate);
 

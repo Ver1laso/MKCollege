@@ -66,3 +66,25 @@
 .policy-list {
     font-size: larger !important;
 }
+
+.signup-buttons {
+    width: 100%;
+}
+
+.signup-home-button {
+    background-color: #157347;
+    color: #d9ffff;
+    border: 0px;
+}
+
+.signup-home-button:hover,
+.signup-home-button:focus,
+.signup-home-button:active,
+.signup-home-button:visited {
+    color: #d9ffff;
+    text-decoration: none;
+}
+
+.privacy-policy-icon {
+    width: 200px;
+}

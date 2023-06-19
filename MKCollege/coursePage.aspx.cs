@@ -175,7 +175,6 @@ namespace MKCollege
                 myCommand = new SqlCommand(qstring, conn);
                 myCommand.ExecuteScalar();
             }
-
         }
 
         public void runWithdraw(object sender, EventArgs e)

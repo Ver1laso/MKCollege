@@ -20,7 +20,7 @@ namespace MKCollege
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Button1.Click += new EventHandler(this.SignUpBtn_Click);
+            SignUpSubmit.Click += new EventHandler(this.SignUpBtn_Click);
         }
 
         // Sign up button click event
@@ -35,7 +35,7 @@ namespace MKCollege
                     cmd.Parameters.AddWithValue("@FirstName", TextBox1.Text.Trim());
                     cmd.Parameters.AddWithValue("@LastName", TextBox4.Text.Trim());
                     cmd.Parameters.AddWithValue("@Email", TextBox5.Text.Trim());
-                    cmd.Parameters.AddWithValue("@DOB", TextBox3.Text.Trim());
+                    cmd.Parameters.AddWithValue("@DOB", DateTime.Parse(TextBox3.Text.Trim()));
                     cmd.Parameters.AddWithValue("@IsMentor", false);
 
                     int insertedUserId = Convert.ToInt32(cmd.ExecuteScalar());

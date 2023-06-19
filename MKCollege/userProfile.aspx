@@ -192,12 +192,6 @@
                                         <td>16/05/2023</td>
                                         <td>30/05/2023</td>
                                     </tr>
-                                    <tr>
-                                        <td>How to not suck at Spring</td>
-                                        <td>Indian Dude</td>
-                                        <td>16/05/2023</td>
-                                        <td>30/05/2023</td>
-                                    </tr>
                                 </table>
                             </div>
                         </div>

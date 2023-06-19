@@ -2220,6 +2220,7 @@
     <Content Include="imgs\library.png" />
     <Content Include="imgs\MKLogo.png" />
     <Content Include="imgs\MKLogoDark.png" />
+    <Content Include="imgs\PrivacyPolicyIcon.png" />
     <Content Include="imgs\Profile.png" />
     <Content Include="imgs\publisher.png" />
     <Content Include="imgs\search-online.png" />
@@ -2275,10 +2276,6 @@
     </Compile>
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="courrsePage.aspx.cs">
-      <DependentUpon>courrsePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="coursePage.aspx.designer.cs">
       <DependentUpon>coursePage.aspx</DependentUpon>
