@@ -51,7 +51,7 @@
                                 <label>Date of Birth</label>
                                 <div class="form-group" style="margin-top: 10px">
                                     <asp:TextBox CssClass="form-control" ID="TextBox3"
-                        runat="server" placeholder="Date of Birth" TextMode="Date"></asp:TextBox>
+                        runat="server" placeholder="Date of Birth"></asp:TextBox>
                                 </div>
 
                             </div>
