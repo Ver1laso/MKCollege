@@ -121,11 +121,16 @@
     <Content Include="adminCourseIssuing.aspx" />
     <Content Include="adminlogin.aspx" />
     <Content Include="adminUserManagement.aspx" />
+    <Content Include="App_Data\searchTest.mdf" />
+    <Content Include="App_Data\searchTest_log.ldf">
+      <DependentUpon>searchTest.mdf</DependentUpon>
+    </Content>
     <Content Include="Bootstrap\css\fullcalendar.min.css" />
     <Content Include="Bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\jquery-3.3.1.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
+    <Content Include="coursePage.aspx" />
     <Content Include="calendarPage.aspx" />
     <None Include="Bootstrap\js\jquery-2.1.0-vsdoc.js" />
     <Content Include="Bootstrap\js\fullcalendar.min.js" />
@@ -135,7 +140,6 @@
     <Content Include="Bootstrap\js\jquery3.7.0.js" />
     <Content Include="Bootstrap\js\moment.min.js" />
     <Content Include="contact.aspx" />
-    <Content Include="courrsePage.aspx" />
     <Content Include="css\Site.css" />
     <Content Include="Datatable\css\jquery.dataTables.min.css" />
     <Content Include="Datatable\js\jquery.dataTables.min.js" />
@@ -2254,6 +2258,10 @@
     <Compile Include="adminUserManagement.aspx.designer.cs">
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
     </Compile>
+    <Compile Include="coursePage.aspx.cs">
+      <DependentUpon>coursePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="calendarPage.aspx.cs">
       <DependentUpon>calendarPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2272,8 +2280,8 @@
       <DependentUpon>courrsePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="courrsePage.aspx.designer.cs">
-      <DependentUpon>courrsePage.aspx</DependentUpon>
+    <Compile Include="coursePage.aspx.designer.cs">
+      <DependentUpon>coursePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Front.Master.cs">
       <DependentUpon>Front.Master</DependentUpon>
