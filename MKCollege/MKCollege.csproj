@@ -130,7 +130,6 @@
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\jquery-3.3.1.min.js" />
     <Content Include="Bootstrap\js\popper.min.js" />
-    <Content Include="coursePage.aspx" />
     <Content Include="calendarPage.aspx" />
     <None Include="Bootstrap\js\jquery-2.1.0-vsdoc.js" />
     <Content Include="Bootstrap\js\fullcalendar.min.js" />
@@ -2259,10 +2258,6 @@
     <Compile Include="adminUserManagement.aspx.designer.cs">
       <DependentUpon>adminUserManagement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="coursePage.aspx.cs">
-      <DependentUpon>coursePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="calendarPage.aspx.cs">
       <DependentUpon>calendarPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2276,9 +2271,6 @@
     </Compile>
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="coursePage.aspx.designer.cs">
-      <DependentUpon>coursePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Front.Master.cs">
       <DependentUpon>Front.Master</DependentUpon>
